@@ -1,0 +1,219 @@
+/* Medium Layout: 992px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+.logo img{
+	width:130px !important;
+	height:30px !important;
+	
+	}
+}
+
+@media only screen and (max-width: 480px) {
+.header-sections{
+	height:50px !important;
+	}
+.header-sections .navbar-default .navbar-toggle {
+    border:1px dotted rgba(55,55,55,1.00) !important;
+	border-radius:0%;
+	width:50px;
+	}
+.header-sections .navbar-default .navbar-toggle i{
+	color:rgba(38,203,154,1.00);
+	font-size:20px;
+	}	
+.main-menu .navbar-default{
+	height:50px !important;
+	z-index:1 !important;
+	}
+.main-menue .navbar-default .navbar-nav > li > a{
+	color:rgba(180,175,175,1.00) !important;
+	text-transform: uppercase;
+	font-size:16px;
+	position:relative;
+	text-align:center;
+	z-index:1 !important;
+	}
+.main-menue .navbar-default .navbar-nav:hover{
+	background-color:rgba(253,253,253,0.75);
+	}
+.main-menue .navbar-default .navbar-nav > li > a::after{
+	content:"";
+	position:absolute;
+	width:80px;
+	height:3px;
+	left:5px;
+	bottom:0px;
+	border-bottom:3px solid  #531E1F;
+	transform:scale(0);
+	transition:all .3s ;
+	-webkit-transition:all .3s ;
+	z-index:1;
+	}
+.main-menue .navbar-default .navbar-nav > li > a:hover::after{
+	color:#fff;
+	transform:scale(1);
+	transition:all .3s ;
+	-webkit-transition:all .3s ;
+	z-index:1;
+	}
+	
+	
+/*=============================
+			mid-section
+=================================*/
+.slider-section{
+	min-height:450px !important;
+	background:url(../img/slider/2.jpg);
+	margin-top:-20px;
+	}
+.mid-test{
+	height:450px !important;
+	background:url(../img/slider/2.jpg);
+	animation: slide 60s linear infinite;
+	}
+@keyframes slide{
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(-1692px, 0, 0);
+  }
+}
+.mid{
+	position:absolute;
+	top:120px !important;
+	text-align:center;
+	z-index:1;
+	left:60px !important;
+	}
+
+
+/*=====================================
+				mid-section
+=========================================*/
+.mid h3{
+	color:rgba(255,255,255,1.00);
+	font-size:10px;
+	font-family:'Roboto Slab', serif;
+	text-align:center !important;
+	}
+.mid h1{
+	color:rgba(255,255,255,1.00);
+	font-size:20px;
+	font-family:'Roboto Slab', serif;
+	text-align:center !important;
+	}
+.mid p{
+	color:rgba(192,185,185,1.00);
+	font-size:14px;
+	font-family: 'Chathura', sans-serif;
+	text-align:center;
+	}
+.border1{
+	border:1px dotted rgba(232,232,232,1.00);
+	width:100px !important;
+	margin-left:50px !important;
+	}
+.botton a{
+	color:rgba(248,248,248,1.00);
+	text-decoration:none;
+	font-size:10px !important;
+	line-height:6px !important;
+	}
+.botton a:hover{
+	color:rgba(0,0,0,1.00);
+	
+	}
+.botton,
+.btn btn-default footer-btn1 botton{
+	background-color:transparent;
+	border-radius:0%;
+	width:100px !important;
+	height:35px !important;
+	transition:all .5s ;
+	}
+.botton:hover, .btn-default:hover  {
+	background-color:rgba(251,251,251,0.45);
+	border:1px solid rgba(118,118,118,1.00);
+	color:rgba(43,80,168,1.00);
+	transition:all .5s ;
+	}
+/*-------------about----------*/
+.right-about::after{
+	position:absolute;
+	content:"";
+	width:100% !important;
+	height:88.2%;
+	top:0px;
+	left:0px;
+	border:1px solid rgba(130,128,128,1.00);
+	transform:scale(0);
+	transition:all .3s;
+	}
+.right-about:hover::after{
+	transform:scale(1);
+	transition:all .3s;
+	border:2px solid rgba(255,255,255,1.00);
+	}
+.my-deatils{
+	position:absolute;
+	text-align:center;
+	top:130px !important;
+	left:145px !important;
+	z-index:1;
+	}
+.my-deatils h3{
+	color:rgba(249,249,249,1.00);
+	transform:scaleY(0);
+	font-size:13px;
+	}
+.my-deatils:hover h3{
+	transform:scaleY(1);
+	transition:all .3s;
+	}
+.my-deatils p{
+	color:rgba(223,223,223,1.00);
+	transform:scaleY(0);
+	font-size:7px;
+	}
+.my-deatils:hover p{
+	transform:scaleY(1);
+	transition:all .3s;
+	}
+.back-to-top {
+			position: fixed;
+			bottom: 2em;
+			right: 0px;
+			text-decoration:none !important;
+			color:rgba(255,255,255,1.00) !important;
+			background-color:rgba(57,57,57,1.00);
+			font-size: 12px;
+			padding: 3px !important;
+			display: none;
+		}
+.back-to-top:hover {	
+			background-color:gray;
+		}	
+.bottom-section span{
+	font-size:10px !important;
+	}
+}
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+
+
+	}
+	}
